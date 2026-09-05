@@ -1,0 +1,8 @@
+request_id,section_id,track_id,asset_type,earliest_start,latest_end,estimated_duration_hrs,required_resources
+REQ-001,SEC-A,TRK-1,rail,2026-09-07T08:00:00,2026-09-07T14:00:00,2,tamping_machine
+REQ-002,SEC-A,TRK-1,rail,2026-09-07T08:00:00,2026-09-07T14:00:00,1.5,
+REQ-003,SEC-A,TRK-1,rail,2026-09-07T08:00:00,2026-09-07T14:00:00,1,tamping_machine
+REQ-004,SEC-B,TRK-2,signal,2026-09-08T09:00:00,2026-09-08T13:00:00,3,possession_team
+REQ-005,SEC-C,TRK-5,overhead_line,2026-09-09T00:00:00,2026-09-09T06:00:00,4,crane
+REQ-006,SEC-B,TRK-2,signal,2026-09-08T09:00:00,2026-09-08T13:00:00,0.5,
+REQ-007,SEC-D,TRK-9,rail,2026-09-10T22:00:00,2026-09-11T04:00:00,3,

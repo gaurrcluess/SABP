@@ -1,0 +1,3 @@
+block_id,section_id,track_id,block_start,block_end,allocated_duration_hrs,used_duration_hrs,assigned_resources
+BLK-100,SEC-A,TRK-1,2026-09-07T08:00:00,2026-09-07T13:00:00,5,0,
+BLK-101,SEC-E,TRK-3,2026-09-06T01:00:00,2026-09-06T05:00:00,3,0,
