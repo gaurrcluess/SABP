@@ -1,8 +1,7 @@
 # RailSync
 
-AI Block Planning System — frontend dashboard for railway maintenance
-requests and AI-optimized block plans. Built for a hackathon (SIH-style
-brief): **React + Vite + Tailwind CSS + shadcn/ui**.
+AI Block Planning System: Dashboard for railway maintenance
+requests and AI : optimized block plans. **React + Vite + Tailwind CSS + shadcn/ui**.
 
 The frontend never calculates priorities or schedules. It sends requests
 to a FastAPI backend and renders whatever comes back.
@@ -10,32 +9,7 @@ to a FastAPI backend and renders whatever comes back.
 ```
 User → Frontend → HTTP/JSON → FastAPI → AI + Optimization Engine → JSON → Frontend
 ```
-
-## Theme — "Tuscan Sunset"
-
-| Token | Hex | Used for |
-|---|---|---|
-| Terracotta | `#E35336` | primary actions, active states |
-| Peach | `#FFD3AC` | accents, highlight panels |
-| Mauve | `#9988A1` | secondary / "recommended" status |
-| Deep rust | `#8A2B0E` | destructive / critical / conflict |
-
-Two supporting hues (a sunset gold and a muted olive) were mixed from the
-same palette for medium-priority and completed-state signals — see the
-CSS variables in `src/index.css`.
-
-KPI numbers are styled as railway split-flap display panels
-(`StatCard`, `flap-digit`) — a nod to the subject matter instead of a
-generic card-with-shadow.
-
-## Getting started
-
-```bash
-npm install
-cp .env.example .env      # set VITE_API_BASE_URL to your FastAPI server
-npm run dev
-```
-
+## Starting
 The app runs on `http://localhost:5500` by default and expects a backend
 at `VITE_API_BASE_URL` (default `http://localhost:8000/api`). FastAPI
 must allow this origin via CORS.
