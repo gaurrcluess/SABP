@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  RailSync — "Tuscan Sunset" theme
+  Source palette: #E35336 (terracotta) · #FFD3AC (peach) · #9988A1 (mauve) · #8A2B0E (rust)
+  All values below are derived from those four hex codes, converted to HSL,
+  plus two muted supporting hues (gold + olive) mixed from the same warm family
+  for status semantics that need a fifth/sixth signal (medium priority, completed state).
+*/
+
+@layer base {
+  :root {
+    --background: 28 45% 97%;
+    --foreground: 14 35% 14%;
+
+    --card: 30 45% 99%;
+    --card-foreground: 14 35% 14%;
+
+    /* dark "split-flap" display panel used for KPI numerals & departure-board accents */
+    --panel: 14 35% 13%;
+    --panel-foreground: 28 90% 88%;
+
+    --primary: 10 76% 55%;          /* terracotta */
+    --primary-foreground: 30 60% 98%;
+
+    --secondary: 281 12% 58%;       /* mauve */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 28 100% 84%;          /* peach */
+    --accent-foreground: 14 45% 18%;
+
+    --destructive: 14 82% 30%;      /* deep rust */
+    --destructive-foreground: 30 60% 97%;
+
+    --warning: 38 78% 54%;          /* sunset gold, mixed from terracotta+peach */
+    --warning-foreground: 14 45% 14%;
+
+    --success: 88 26% 36%;          /* muted olive, low-saturation warm-neutral green */
+    --success-foreground: 0 0% 100%;
+
+    --muted: 28 42% 93%;
+    --muted-foreground: 16 14% 40%;
+
+    --border: 28 30% 87%;
+    --input: 28 30% 87%;
+    --ring: 10 76% 55%;
+
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    font-feature-settings: "cv11", "ss01";
+  }
+  body {
+    @apply min-h-screen bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-primary/20;
+  }
+}
+
+@layer components {
+  /* Split-flap style numeral, used on KPI cards and block time readouts */
+  .flap-digit {
+    @apply font-mono tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  .corridor-line {
+    stroke-dasharray: 2 6;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+}
