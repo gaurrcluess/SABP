@@ -139,7 +139,7 @@ export default function RegisterRequest() {
     <>
       <Topbar
         title="Register Maintenance Request"
-        description="Submitted requests are queued for AI prioritization and block planning."
+        description="Submitted requests are queued for prioritization and block planning."
         onMenuClick={openMobileNav}
       />
       <main className="flex-1 px-4 py-6 sm:px-6">

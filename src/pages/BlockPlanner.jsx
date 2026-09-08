@@ -54,7 +54,7 @@ export default function BlockPlanner() {
     <>
       <Topbar
         title="Block Planner"
-        description="Generate an AI-optimized maintenance block plan and review the result."
+        description="Generate an optimized maintenance block plan."
         onMenuClick={openMobileNav}
       />
 

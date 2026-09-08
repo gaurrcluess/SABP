@@ -84,7 +84,7 @@ export default function Dashboard() {
     <>
       <Topbar
         title="Dashboard"
-        description="Corridor-wide maintenance and block planning overview."
+        description="Maintenance and block planning overview."
         onMenuClick={openMobileNav}
       />
 

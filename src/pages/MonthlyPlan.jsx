@@ -45,7 +45,7 @@ export default function MonthlyPlan() {
     <>
       <Topbar
         title="Monthly Plan"
-        description="A visualization of the week-by-week block plan already produced by the backend."
+        description="A visualization of the month's block plan."
         onMenuClick={openMobileNav}
         actions={
           <div className="flex items-center gap-1">

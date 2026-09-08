@@ -55,7 +55,7 @@ export default function MaintenanceRequests() {
     <>
       <Topbar
         title="Maintenance Requests"
-        description="All requests submitted by railway users, with AI priority scoring from the backend."
+        description="All requests submitted by railway users, with priority scoring."
         onMenuClick={openMobileNav}
         actions={
           <Button asChild>
